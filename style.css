@@ -1,0 +1,44 @@
+
+.container {
+    width: 350px;
+    height: 320px;
+    position: relative;
+}
+
+.square {
+    width: 95px;
+    height: 105px;
+    background-color: green;
+    position: absolute;
+    top: 205px;
+    left: 200px;
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+        background-color: green;
+    }
+
+    25% {
+        transform: translate(0, -200px);
+        background-color: red;
+    }
+
+    50% {
+        transform: translate(-180px, -200px);
+        background-color: yellow;
+        
+    }
+
+    75% {
+        transform: translate(-180px, 0);
+        background-color: blue;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        background-color: green;
+    }
+}
